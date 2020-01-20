@@ -1,0 +1,3 @@
+- composer require annotations
+- composer require twig
+- composer doctrine maker
