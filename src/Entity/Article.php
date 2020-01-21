@@ -22,16 +22,37 @@ class Article
     private $title;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string", length=255)
      */
     private $body;
+
+    
+    // ... getter and setter methods
 
     public function getId()
     {
         return $this->id;
     }
 
-    // ... getter and setter methods
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    public function setTitle($title)
+    {
+        $this->title = $title;
+    }
+
+    public function getBody()
+    {
+        return $this->body;
+    }
+
+    public function setBody($body)
+    {
+        $this->body = $body;
+    }
 
     
 }
